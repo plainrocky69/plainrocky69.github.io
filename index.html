@@ -3,33 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Welcome to my website</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0e0e0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #0078d7;
+            color: #fff;
+            padding: 20px;
+        }
+        header img {
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+        nav {
+            background-color: #0078d7;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content section {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #0078d7;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+        }
+        #mute-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>This is the Downloads for my stupid shit </h1>
+       
+        <h1>Welcome to my website!</h1>
     </header>
-    <main>
-        <section class="project">
-            <h2>Unity Game</h2>
-            <p>Download my shit unity car game:</p>
-            <a href="https://mega.nz/file/iHggCCbJ#Imv8R_mizO7j7Mj132Vw6JBPGFNcMmKDGehWqnxsZIM" download>Download Unity Game</a>
+    <nav>
+        <a href="#software1">Shitty car game</a>
+        <a href="#software2">Shitty fps</a>
+        <a href="#software3">Open source java notepad</a>
+    </nav>
+
+    <div class="content">
+        <section id="software1">
+            <h2>shitty car game</h2>
+            <p><a href="https://mega.nz/file/iHggCCbJ#Imv8R_mizO7j7Mj132Vw6JBPGFNcMmKDGehWqnxsZIM" target="_blank">Download</a></p>
         </section>
-        <section class="project">
-            <h2>Open Source Java Notepad</h2>
-            <p>Download the open-source Java notepad by clicking the link below:</p>
-            <a href="https://github.com/plainrocky69/OpenNotepad/releases/download/java/OpenNotePad.jar" download>Download OpenNotepad</a>
-             
-            <h2> The source code is Below</h2>
-             <a href="https://github.com/plainrocky69/OpenNotepad/" download>Download OpenNotepad source code</a>
-            <p> download my really shitty fps game</p>
-            <a href="https://mega.nz/file/TK4CjDwI#XOhEvAJVDAhZkqkOC3ee77q-AnnGM66dLQ0n6IFsUxM" download> shitty game download</a>
-            
+        <section id="software2">
+          <h2>shitty fps game</h2>
+            <p><a href="https://mega.nz/file/TK4CjDwI#XOhEvAJVDAhZkqkOC3ee77q-AnnGM66dLQ0n6IFsUxM" target="_blank">Download</a></p>
         </section>
-    </main>
+        <section id="software3">
+            <h2>Open source java notepad</h2>
+            <p><a href="https://github.com/plainrocky69/OpenNotepad/releases/download/java/OpenNotePad.jar" target="_blank">Download</a></p>
+        </section>
+    </div>
+
     <footer>
-      
+        <p>Contact me at: <a href="mailto:plainrocky@hatesje.ws">plainrocky@hatesje.ws</a> or call my textplus number +1 205-417-4547</p>
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/@plainrocky69" target="_blank"><img src="tiktok.jpg" alt="TikTok"></a>
+            <a href="https://www.youtube.com/channel/@plainrocky" target="_blank"><img src="youtube.jpg" alt="YouTube"></a>
+            
+        </div>
     </footer>
+
+    <audio autoplay loop>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio> 
 </body>
 </html>
